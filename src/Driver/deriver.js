@@ -3,7 +3,6 @@ import SubHeader from '../components/SubHeader/subHeader'
 import Table from 'react-bootstrap/Table';
 import Pagination from 'react-bootstrap/Pagination';
 import PageItem from 'react-bootstrap/PageItem'
-import * as $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {getDrivers} from '../components/Api/DriversData';
 import './driver.css'
