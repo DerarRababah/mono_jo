@@ -1,0 +1,19 @@
+.sub-header{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 15px;
+
+    a{
+        color:#c0bdd0 ;
+        font-size: 18px;
+        &.active{
+            font-weight: bold;
+            color: #0e0b20;
+        }
+    }
+    span{
+        margin: 0 15px;
+    }
+}

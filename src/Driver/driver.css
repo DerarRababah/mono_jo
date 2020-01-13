@@ -1,1 +1,152 @@
-/* No CSS *//*# sourceMappingURL=driver.css.map */
+.table-page {
+  background-color: #fff;
+  padding: 0 30px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
+  line-height: 13px;
+  width: auto;
+}
+
+.table-page .container-header-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.table-page .container-header-table input {
+  width: 250px;
+  height: 31px;
+  border-radius: 9px;
+  border: 1px solid;
+  outline: none;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.table-page .container-header-table .title {
+  font-size: 19px;
+}
+
+.table-page table {
+  color: rgba(0, 0, 0, 0.65);
+  width: auto;
+}
+
+.table-page table thead, .table-page table tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 100;
+}
+
+.table-page table thead tr, .table-page table tbody tr {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.table-page table thead tr:hover, .table-page table tbody tr:hover {
+  background-color: #e4e9f0;
+}
+
+.table-page table thead tr th, .table-page table tbody tr th {
+  background-color: #f2f4f8;
+  border-top: 0;
+}
+
+.table-page table thead tr th:first-child, .table-page table tbody tr th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table-page table thead tr th:last-child, .table-page table tbody tr th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.table-page table thead tr td, .table-page table thead tr th, .table-page table tbody tr td, .table-page table tbody tr th {
+  font-weight: 100;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 145px;
+      flex-basis: 145px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 15px !important;
+}
+
+.table-page table thead tr td i, .table-page table thead tr th i, .table-page table tbody tr td i, .table-page table tbody tr th i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.table-page table thead tr td button, .table-page table thead tr th button, .table-page table tbody tr td button, .table-page table tbody tr th button {
+  background: none;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin: 0 5px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.65);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table-page table thead tr td button i, .table-page table thead tr th button i, .table-page table tbody tr td button i, .table-page table tbody tr th button i {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.table-page table thead tr td:last-child, .table-page table tbody tr td:last-child {
+  padding: 0 !important;
+}
+
+.pagination {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pagination .page-item {
+  margin: 3px;
+}
+
+.pagination .page-item.active .page-link {
+  color: rgba(0, 0, 0, 0.65);
+  background: none;
+  border-color: #007bff;
+}
+
+.pagination .page-item .page-link {
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 5px;
+}
+/*# sourceMappingURL=driver.css.map */

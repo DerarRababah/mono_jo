@@ -1,14 +1,10 @@
 .main-menu{
-    width: 300px;
+    flex-basis: 300px;
     flex-grow: 0;
     flex-shrink: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    flex-grow: 0;
-    height: 100%;
-    background-color: #fff;
 
     .header {
         background-color: #000;
@@ -85,7 +81,7 @@
 @media  (max-width:992px) {
 
     .main-menu{
-        width: 75px;
+        flex-basis: 75px;
 
         .header {
             padding: 0;

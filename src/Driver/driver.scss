@@ -1,0 +1,116 @@
+.table-page{
+    background-color: #fff;
+    padding: 0 30px ;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 13px;
+    width: auto;
+   
+     .container-header-table {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px;
+
+        input{
+            width: 250px;
+            height: 31px;
+            border-radius: 9px;
+            border: 1px solid;
+            outline: none;
+            padding: 0 10px;
+            color:  rgba(0,0,0,.65);
+        }
+        .title{
+            font-size: 19px;
+        }
+    }
+    table{
+        color: rgba(0,0,0,.65);
+        width: auto;
+        
+      
+        thead, tbody {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            font-weight: 100;
+            tr {
+                flex-basis: 100%;
+                display: flex;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: #e4e9f0;
+                }
+                th{
+                    background-color: #f2f4f8;
+                    border-top: 0;
+                    &:first-child{
+                        border-top-left-radius: 10px;
+                    }
+                    &:last-child{
+                        border-top-right-radius: 10px;
+                    }
+                   
+                }
+                td, th {
+                    font-weight: 100;
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                    flex-basis: 145px;
+                    text-align: left;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    padding: 13px 15px !important;
+                    
+                    i{
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+
+                    button {
+                        background: none;
+                        border: 1px solid;
+                        border-radius: 5px;
+                        padding: 3px 8px;
+                        margin: 0 5px;
+                        font-size: 12px;
+                        color: rgba(0,0,0,.65);
+                        display: flex;
+                        i{
+                            margin: 0;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                td{
+                    &:last-child{
+                        padding: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.pagination{
+    justify-content: flex-end;
+    
+    .page-item{
+        margin: 3px;
+    
+        &.active{
+            .page-link{
+                color:  rgba(0,0,0,.65);
+                background: none;
+                border-color: #007bff;
+            }
+        }
+        .page-link{
+            color:  rgba(0,0,0,.65);
+            border-radius: 5px;
+        }
+    }
+}
