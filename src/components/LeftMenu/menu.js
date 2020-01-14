@@ -1,13 +1,15 @@
 import React,{Component} from 'react';
 import './menu.css'
 import logo from '../../img/logo-inverse.png'
+import logoMobile from '../../img/logo-inverse-mobile.png'
 import {Link} from 'react-router-dom'
 
 
 class Menu extends Component {
 
     state = {
-        tap_active : ""
+        tap_active : "",
+        footer_active : ""
     }
 
   
@@ -27,18 +29,34 @@ class Menu extends Component {
        
     }
 
+    toggleFooterActiveClass(){
+        if(this.state.footer_active == ""){
+
+            this.setState({
+                footer_active: "active"
+            })
+
+        }else{
+
+            this.setState({
+                footer_active: ""
+            })
+        }
+    }
+
     render(){
         return (
-            <div className="main-menu">
-                  <div className="header">
+            <div className={'main-menu ' + this.state.footer_active}>
+                <div className="header">
                       <div className="logo">
                           <Link to="/">
-                            <img src={logo} />
+                            <img src={logo} className="computer"/>
+                            <img src={logoMobile} className="mobile"/>
                           </Link>
                           
                       </div>
                   </div>
-                  <div className="menu-items">
+                <div className="menu-items">
 
                         <Link to="/dashboard"  className="item">
                             <div className="icon">
@@ -113,6 +131,10 @@ class Menu extends Component {
 
 
                   </div>
+                <div className="footer" onClick={this.toggleFooterActiveClass.bind(this)}>
+                    <span className="open-menu"> &lt;</span>
+                    <span className="close-menu">></span>
+                </div>
             </div>
           );
     }

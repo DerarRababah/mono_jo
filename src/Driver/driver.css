@@ -1,7 +1,7 @@
 .table-page {
   background-color: #fff;
   padding: 0 30px;
-  border-radius: 15px;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,12 +22,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px 0px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .table-page .container-header-table input {
   width: 250px;
   height: 31px;
-  border-radius: 9px;
+  border-radius: 5px;
   border: 1px solid;
   outline: none;
   padding: 0 10px;
@@ -73,11 +75,11 @@
 }
 
 .table-page table thead tr th:first-child, .table-page table tbody tr th:first-child {
-  border-top-left-radius: 10px;
+  border-top-left-radius: 5px;
 }
 
 .table-page table thead tr th:last-child, .table-page table tbody tr th:last-child {
-  border-top-right-radius: 10px;
+  border-top-right-radius: 5px;
 }
 
 .table-page table thead tr td, .table-page table thead tr th, .table-page table tbody tr td, .table-page table tbody tr th {
@@ -148,5 +150,20 @@
 .pagination .page-item .page-link {
   color: rgba(0, 0, 0, 0.65);
   border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .table-page .container-header-table input {
+    width: 180px;
+  }
+  .pagination {
+    margin-top: 20px;
+  }
+  .pagination .page-item {
+    margin: 2px;
+  }
+  .pagination .page-item .page-link {
+    padding: 6px;
+  }
 }
 /*# sourceMappingURL=driver.css.map */

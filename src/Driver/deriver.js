@@ -3,6 +3,7 @@ import SubHeader from '../components/SubHeader/subHeader'
 import Table from 'react-bootstrap/Table';
 import Pagination from 'react-bootstrap/Pagination';
 import PageItem from 'react-bootstrap/PageItem'
+import * as $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {getDrivers} from '../components/Api/DriversData';
 import './driver.css'
@@ -79,21 +80,35 @@ class Driver extends Component {
             active : value
         })
     }
-    /*****Start Pagination */
-
-  
-    /*****End Pagination */
+ 
     render(){
         const { filteredData } = this.state;
        
         let items = [];
+       
+
         for (let number = 1; number <= filteredData.length / 10; number++) {
-        items.push(
-            <Pagination.Item key={number}  active={number === this.state.active} onClick={() => this.clickPagination(number)} >
-            {number}
-            </Pagination.Item>,
-        );
+            if(number == 1){
+                items.push(
+                    <Pagination.Item key='@1' className=''   onClick={() => this.clickNextPrevPagination()} >
+                         &lt;
+                    </Pagination.Item>,
+                );
+            }
+                items.push(
+                    <Pagination.Item key={number}  active={number === this.state.active} onClick={() => this.clickPagination(number)} >
+                    {number}
+                    </Pagination.Item>,
+                );
+                if(number == filteredData.length / 10){
+                    items.push(
+                        <Pagination.Item key='@2' className=''   onClick={() => this.clickNextPrevPagination()} >
+                             >
+                        </Pagination.Item>,
+                    );
+                }
         }
+        
         return (
             <div className="page" >
                <SubHeader  page="Drivers"/>
